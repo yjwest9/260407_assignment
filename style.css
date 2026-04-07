@@ -1,3 +1,221 @@
+/* ============================================
+    내 소개페이지 완성
+   6차시 종합 실습 : CSS 소개 페이지 완성
+   이 파일 전체를 style.css 로 사용하세요.
+   TODO 표시된 곳을 완성해보세요!
+   ============================================ */
+
+/* ★ 1. 리셋 & 기본 설정 ★ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1E293B;
+  background: #F8FAFC;
+}
+
+
+/* ★ 2. HEADER ★ */
+
+/* TODO 1 ─────────────────────────────────────
+   header, nav 스타일을 완성하세요.
+   - header: 배경색, padding, color
+   - nav a: 색상, margin, hover 효과
+────────────────────────────────────────────── */
+header {
+  /* 여기에 작성 */
+  background: #c6916f;
+  color: #433930;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px;
+  border-radius: 0px;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  /* 여기에 작성 */
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: 20px;
+  
+  padding-right: 20px;
+}
+
+nav a:first-child{
+    margin-left: 950px;
+}
+
+nav a:hover {
+  /* 여기에 작성 */
+  text-decoration: underline;
+}
+
+
+/* ★ 3. MAIN 콘텐츠 ★ */
+
+/* TODO 2 ─────────────────────────────────────
+   main 과 section 스타일을 완성하세요.
+   - main: max-width, margin auto, padding
+   - section: background, padding, border-radius, margin-bottom, hover 효과
+────────────────────────────────────────────── */
+main {
+  /* 여기에 작성 */
+  background: #f3f6f8;
+}
+
+section {
+  /* 여기에 작성 */
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.content-wrapper {
+  display: flex;       /* 이미지와 텍스트 그룹을 가로로 배치 */
+  align-items: center; /* 이미지와 글자의 높이를 중앙으로 맞춤 (선택사항) */
+  gap: 30px;           /* 이미지와 글자 사이의 간격 */
+}
+
+section:hover {
+  /* 여기에 작성 */
+}
+
+
+/* ★ 4. 텍스트 ★ */
+
+/* TODO 3 ─────────────────────────────────────
+   h1, h2, p, a 스타일을 완성하세요.
+────────────────────────────────────────────── */
 h1 {
-    color: beige;
+  font-size: 36px;
+  font-weight: 700;
+  /* color 추가 */
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  /* color 와 ::before 장식 추가 */
+}
+
+h2::before {
+  /* 장식 추가 */
+  content: "✔";
+  color: rgb(36, 145, 36);
+}
+
+p {
+  margin-bottom: 12px;
+  /* color 추가 */
+}
+
+a {
+  /* color, text-decoration */
+}
+
+a:hover {
+  /* hover 색상 */
+}
+
+
+/* ★ 5. 이미지 ★ */
+
+/* TODO 4 ─────────────────────────────────────
+   img 를 원형으로 스타일링하세요.
+────────────────────────────────────────────── */
+img {
+  /* width, height, object-fit, border-radius, border */
+}
+
+
+/* ★ 6. 목록 ★ */
+
+/* TODO 5 ─────────────────────────────────────
+   ul, li 스타일을 완성하세요.
+   nth-child 도 사용해보세요!
+────────────────────────────────────────────── */
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #F1F5F9;
+  /* color 추가 */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+/* ★ 7. 버튼 ★ */
+
+/* TODO 6 ─────────────────────────────────────
+   .btn 과 .btn:hover 를 완성하세요.
+   transition 과 transform 꼭 포함!
+────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: inherit;
+  text-decoration: none;
+  /* background, color, transition 추가 */
+}
+
+.btn:hover {
+  /* background, transform, box-shadow 추가 */
+}
+
+
+/* ★ 8. 폼 ★ */
+input, textarea, select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ★ 9. FOOTER ★ */
+
+/* TODO 7 ─────────────────────────────────────
+   footer 스타일을 완성하세요.
+────────────────────────────────────────────── */
+footer {
+  /* background, color, text-align, padding, margin-top */
+}
+
+footer a {
+  color: #93C5FD;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  color: #F59E0B;
 }

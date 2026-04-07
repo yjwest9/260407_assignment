@@ -3,13 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>실습과제</title>
+    <title>내 소개 페이지</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
 </head>
 <body>
-    <h1>hello world!</h1>
+    <header>
+        <h1>서영준의 소개 페이지</h1>
+        <nav>
+            <a href="#about">소개</a>
+            <a href="#hobby">취미</a>
+            <a href="#schedule">일정</a>
+            <a href="#contact">연락처</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>나에대해서</h2>
+            <div class="content-wrapper">
+            <img src="img/나에대해서.jpg" alt="나에대해서">
+            <p>안녕하세요. 저는 서영준입니다.<br>
+                만나서 반갑습니다.</p>
+            </div>
+        </section>
+
+        <section id="hobby">
+        <!-- 여기에 작성 -->
+         <h2>취미목록</h2>
+        <ul>
+            <li>운동
+                <ul>
+                    <li>축구</li>
+                    <img src="img/손흥민.jpg" alt="축구" width="250">
+                    <li>헬스</li>
+                    <img src="img/헬스.jpg" alt="헬스" width="250">
+                </ul>
+            </li>
+            <li>게임
+                <ul>
+                    <li>롤</li>
+                    <img src="img/롤.jpg" alt="롤" width="250">
+                    <li>피파</li>
+                    <img src="img/피파.jpg" alt="피파" width="250">
+                </ul>
+            </li>
+            <li>음악
+                <ul>
+                    <li>노래듣기</li>
+                    <img src="img/노래듣기.jpg" alt="노래듣는이미지" width="150">
+                    <li>노래부르기</li>
+                    <img src="img/노래부르기.jpg" alt="노래부르는이미지" width="150">
+                </ul>
+            </li>
+        </ul>
+      </section>
+      <section id="schedule">
+        <!-- 여기에 작성 -->
+         <h2>수업일정</h2>
+         <table border="1">
+            <tr>
+                <th>요일</th>
+                <th>오전</th>
+                <th>오후</th>
+            </tr>
+            <tr>
+                <td>월</td>
+                <td>HTML 수업</td>
+                <td>실습</td>
+            </tr>
+            <tr>
+                <td>화</td>
+                <td>CSS 수업</td>
+                <td>실습</td>
+            </tr>
+            <tr>
+                <td>수</td>
+                <td>JS 수업</td>
+                <td>실습</td>
+            </tr>
+            <tr>
+                <td>목</td>
+                <td>AI 수업</td>
+                <td>실습</td>
+            </tr>
+            <tr>
+                <td>금</td>
+                <td>HTML 수업</td>
+                <td>실습</td>
+            </tr>
+         </table>
+      </section>
+      <section id="contact">
+        <!-- 여기에 작성 -->
+         <h2>연락처</h2>
+         <form action="">
+            <p>
+                <label for="">이름</label>
+                <input type="text" placeholder="이름을 입력하세요">
+            </p>
+            <p>
+                <label for="">이메일</label>
+                <input type="email" name="" id="" placeholder="example@example.com">
+            </p>
+            <p>
+                <label for="">하고싶은말</label>
+                <textarea 
+                rows="3"
+                cols="20"
+                name="" id="">
+                </textarea>
+            </p>
+            <button type="submit">제출</button>
+         </form>
+      </section>
+    </main>
+    
+    <footer>
+      <!-- TODO 7 ──────────────────────────────────────
+      저작권 문구를 써주세요.
+      예) <p>© 2025 홍길동. All rights reserved.</p>
+    ─────────────────────────────────────────────── -->
+        <p>© 2026 서영준. All rights reserved.</p>
+    </footer>
+
+    <!-- 완성 후:
+    git add .
+    git commit -m "HTML 종합 실습 완성"
 </body>
 </html>
